@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DISPLIB</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+    />
+
+  </head>
+  <body>
+    <header class="container">
+    <a href="https://www.sintef.no/en/digital/departments-new/department-of-mathematics-and-cybernetics/research-group-optimization/">
+	    <img src="sinteflogo.png" style="width: 10em;"/></a>
+    <br />
+    <img style="width:40em;padding-left:4em;padding-top:2em;" src="displiblogo.png" />
+    </header>
+    <main class="container"><div style="width: 75%;">
+	  <h1>DISPLIB: Train Dispatching benchmark library</h2>
+    <p>
+    Given a set of trains traveling on a railway, the
+    <strong>Train Dispatching Problem</strong> is the operational problem
+    that occurs when some trains have become delayed with respect  
+    to their prescribed timetable, and we want to make routing 
+    and scheduling adjustments to minimize the total delay on the railway.
+    Effective management of dense railway traffic using algorithms has proven
+    to be very hard.
+    </p>
+    <p>
+    <strong>DISPLIB</strong> is a problem definition, a file format,
+     and a set of problem instances with the aim of 
+      allowing researchers and engineers to better compare and benchmark their
+      algorithms.
+    </p>
+
+    <p>
+    The first part of the development of the DISPLIB is the competition
+    described below, which will be an occasion to collect problem instances from
+    a variety of sources and validate the suitability of the problem format in
+    practice.  Later, we intend to organize problem instances on this web page,
+    along with more details and classifications, with the intention of creating
+    a standard benchmark suite for train dispatching algorithms.
+    </p>
+
+    <h2>DISPLIB 2025 Competition</h2>
+    <p>
+    The <strong>DISPLIB 2025 competition</strong> challenges you to advance the state-of-the-art in real-time train
+dispatching and contribute to more environmentally friendly transportation!
+    </p>
+
+    <p>
+    All the details are found in the files available below. This web page will be updated as the competition progresses,
+     so please check back regularly if you are planning to participate.
+    </p>
+
+    <p>
+    <strong>No registration is needed</strong> &mdash; any team may submit new solutions to
+    the organizers at any point before the deadline by sending an email to
+
+		    &lt;<a
+    href="mailto:displib2025competition@gmail.com">displib2025competition@gmail.com</a>&gt;.
+    We encourage teams not to send updates more
+    frequently than once a week.  
+A scoreboard for the Phase 1 instances will be maintained on this webpage.
+During Phase 2, the scoreboard will be kept hidden and each team will be required to <strong>submit a short report describing their algorithm</strong>.
+The final ranking will be decided by the competition committee based both on the results of the scoreboard and the quality/novelty of the report.
+See the competition document below for detailed instructions.
+    </p>
+
+    <h3>Timeline</h3>
+    <ul>
+	    <li> <i style="color: darkgreen;" class='bx bx-sm bx-check '></i> <strong>2024-09-10</strong>: Competition announced at ODS conference 2024 and online channels.</li>
+	    <li> <i style="color: darkgreen;" class='bx bx-sm bx-check '></i> <strong>2024-10-01</strong>: First set of problem instances published (Phase 1).</li>
+	    <li> <i style="color: darkgreen;"      class='bx bx-sm bx-check'></i>  <strong>2025-01-31</strong>: Early submission deadline for the Phase 1 scoreboard (optional).</li>
+	    <li> <i style="color: darkgreen;"      class='bx bx-sm bx-check'></i>  <strong>2025-02-03</strong>: Second set of problem instances published (Phase 2).</li>
+	    <li> <i style="color: gray;"      class='bx bx-sm bx-time'></i>  2025-04-30: Final submission deadline for all instances (Phase 1 and Phase 2).</li>
+    </ul>
+
+
+
+    <h3>Files</h3>
+    <ul>
+	    <li>
+		    <a href="displib_2025_competition_2024-10-08.pdf">
+			    <i class='bx bx-file bx-sm' style="color:#373c44;"></i>
+			    DISPLIB 2025 competition and format</a> 
+		    (updated 2024-10-08)
+		    <ul style="font-size: 80%; color:gray;";>
+			    <li>
+		    <a href="displib_2025_competition_2024-10-04.pdf" style="color: gray;">
+		    (prev. version 2024-10-04)
+		    </a>
+		    <a href="displib_2025_competition_2024-10-02.pdf" style="color: gray;">
+		    (prev. version 2024-10-02)
+		    </a>
+		    <a href="displib_2025_competition_2024-10-01.pdf" style="color: gray;">
+		    (prev. version 2024-10-01)
+		    </a>
+		    <a href="displib_2025_competition_2024-09-06.pdf" style="color: gray;">
+		    (prev. version 2024-09-06)
+		    </a>
+			    </li>
+		    </ul></li>
+	    </li>
+	    <li><a href="displib_verify_v0_3.zip">
+			    <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+			    Solution verification program (Python)</a> (version 0.3 published 2024-10-08)
+		    <ul style="font-size: 80%; color:gray;"><li>
+		    (<a href="displib_verify_v0_2.zip" style="color:gray;">v0.2 published 2024-09-06</a>)</li>
+		    </ul>
+	    </li>
+
+	    <li><a href="displib_instances_testing.zip">
+			    <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+			    Test instances</a> (published 2024-09-06)</li>
+	    <li><a href="displib_instances_phase1_v1_1.zip">
+			    <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+			    Phase 1 instances</a>
+		    (v1.1 <strong>updated</strong> 2024-10-08)
+		    <ul style="font-size: 80%; color:gray;"><li>
+		    (<a href="displib_instances_phase1_v1_0.zip" style="color:gray;">v1.0 published 2024-10-01</a> had errors in 
+		    the train references in the objective components of 
+			the <tt>line1_full</tt> instances)</li>
+		    </ul>
+
+	    </li>
+	    <li><a href="displib_instances_phase2_v1_0.zip">
+			    <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+			    Phase 2 instances</a>
+		    (v1.0 published 2025-02-03)
+	    </li>
+    </ul>
+
+    <h3>Phase 1 Leaderboard</h3>
+
+    Seven teams submitted solutions within the Phase 1 deadline.
+
+<table>
+    <thead>
+        <tr>
+            <th>team</th>
+            <th>line1_critical</th>
+            <th>line1_full</th>
+            <th>line2_close</th>
+            <th>line2_headway</th>
+            <th>line3</th>
+            <th>SUM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>team_2025-01-30_openbus</td>
+            <td>76</td>
+            <td>95</td>
+            <td>80</td>
+            <td>77</td>
+            <td>43</td>
+            <td>371</td>
+        </tr>
+        <tr>
+            <td>team_2025-01-31_CSLS</td>
+            <td>76</td>
+            <td>76</td>
+            <td>63</td>
+            <td>61</td>
+            <td>43</td>
+            <td>319</td>
+        </tr>
+        <tr>
+            <td>team_2025-01-31_TRAINees</td>
+            <td>45</td>
+            <td>32</td>
+            <td>37</td>
+            <td>64</td>
+            <td>19</td>
+            <td>197</td>
+        </tr>
+        <tr>
+            <td>team_2025-01-29_wub</td>
+            <td>76</td>
+            <td>20</td>
+            <td>45</td>
+            <td>11</td>
+            <td>9</td>
+            <td>161</td>
+        </tr>
+        <tr>
+            <td>team_2025-01-30_delayed_train2_250130</td>
+            <td>17</td>
+            <td>52</td>
+            <td>23</td>
+            <td>33</td>
+            <td>27</td>
+            <td>152</td>
+        </tr>
+        <tr>
+            <td>team_2025-01-31_RailwayRam2</td>
+            <td>14</td>
+            <td>0</td>
+            <td>14</td>
+            <td>19</td>
+            <td>2</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <td>team_2025-01-31-ATeam</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+    <h3>Organizers</h3>
+    <p>
+    The competition is organized by Bjørnar Luteberget, Giorgio Sartor, Oddvar
+    Kloster, and Carlo Mannino, and is funded by 
+    <a href="https://www.sintef.no/en/digital/departments-new/department-of-mathematics-and-cybernetics/research-group-optimization/">
+    SINTEF
+    </a>. Get in touch with us by email
+    if you find any errors or want to contribute new problem instances:
+		    &lt;<a
+    href="mailto:displib2025competition@gmail.com">displib2025competition@gmail.com</a>&gt;
+
+	    </div></main>
+  </body>
+</html>
