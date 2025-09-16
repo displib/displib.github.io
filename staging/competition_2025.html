@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>DISPLIB</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <!-- Pico.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
+
+</head>
+
+<body>
+  <header class="container">
+    <a
+      href="https://www.sintef.no/en/digital/departments-new/department-of-mathematics-and-cybernetics/research-group-optimization/">
+      <img src="sinteflogo.png" style="width: 10em;" /></a>
+    <br />
+    <img style="width:40em;padding-left:4em;padding-top:2em;" src="displiblogo.png" />
+  </header>
+  <main class="container">
+    <div style="width: 75%;">
+      <h1>DISPLIB competition 2025</h2>
+        <p>
+          Given a set of trains traveling on a railway, the
+          <strong>Train Dispatching Problem</strong> is the operational problem
+          that occurs when some trains have become delayed with respect
+          to their prescribed timetable, and we want to make routing
+          and scheduling adjustments to minimize the total delay on the railway.
+          Effective management of dense railway traffic using algorithms has proven
+          to be very hard.
+        </p>
+        <p>
+          <strong>DISPLIB</strong> is a problem definition, a file format,
+          and a set of problem instances with the aim of
+          allowing researchers and engineers to better compare and benchmark their
+          algorithms.
+        </p>
+
+        <p>
+          The first part of the development of the DISPLIB is the competition
+          described below, which will be an occasion to collect problem instances from
+          a variety of sources and validate the suitability of the problem format in
+          practice. Later, we intend to organize problem instances on this web page,
+          along with more details and classifications, with the intention of creating
+          a standard benchmark suite for train dispatching algorithms.
+        </p>
+
+        <h2>DISPLIB 2025 Competition</h2>
+        <p>
+          The <strong>DISPLIB 2025 competition</strong> ran from October 2024 to May 2025 and challenged participants to
+          advance the state-of-the-art in real-time train
+          dispatching. Two sets of problem instances were released in two phases (October 2024 and February 2025).
+          The competition deadline has now passed, the competition is over, and results are available below. 
+          The winners were announced at <a href="https://www.airoconference.it/ods2025/">ODS Conference</a>, 4 September 2025.
+        </p>
+
+        <h3>Timeline</h3>
+        <ul>
+	  <li> <i style="color: darkgreen;" class='bx bx-sm bx-check '></i> <strong>2024-09-10</strong>: Competition announced at ODS conference 2024 and online channels.</li>
+	  <li> <i style="color: darkgreen;" class='bx bx-sm bx-check '></i> <strong>2024-10-01</strong>: First set of problem instances published (Phase 1).</li>
+	  <li> <i style="color: darkgreen;"      class='bx bx-sm bx-check'></i>  <strong>2025-01-31</strong>: Submission deadline for the Phase 1 scoreboard (optional).</li>
+	  <li> <i style="color: darkgreen;"      class='bx bx-sm bx-check'></i>  <strong>2025-02-03</strong>: Second set of problem instances published (Phase 2).</li>
+          <li> <i style="color: darkgreen;" class='bx bx-sm bx-check'></i> <strong>2025-04-30</strong>: Submission deadline for participating in the competition.</li>
+          <li> <i style="color: darkgreen;" class='bx bx-sm bx-check'></i> <strong>2025-05-15</strong>: Phase 2 scoreboard and selection of finalists announced.</li>
+	  <li> <i style="color: darkgreen;" class='bx bx-sm bx-check'></i> <strong>2025-09-04</strong>: Competition results presented at <a href="https://www.airoconference.it/ods2025/">ODS Conference</a>. </li>
+	  <li> <i style="color: darkgreen;" class='bx bx-sm bx-check'></i> <strong>2025-09-17</strong>: Solution details available.</li>
+        </ul>
+
+
+
+        <h3>Phase 2 results</h3>
+
+        <p>We had 15 great teams participating in the competition, of which
+          11 endured to the end of Phase 2 and submitted a report describing their algorithms.
+          All the reports were well written and the organizing committee is
+          very impressed with the great efforts and grateful for all the contributions.
+          Out of these 11 candidates, the scientific committee selected three finalist teams who
+          were outstanding both in solution quality and in describing interesting and novel ideas used
+          in the computations.</p>
+
+        <p>The finalists are (listed in alphabetical order):</p>
+
+        <p>
+        <ul>
+          <li>
+            <strong>CSLS</strong>
+            <p style="font-size: 70%">
+              Carolin Scholl, Luka Stärk
+            </p>
+          </li>
+          <li>
+            <strong>openbus</strong>
+            <p style="font-size: 70%">
+              Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi
+            </p>
+          </li>
+          <li>
+            <strong>v777v</strong>
+            <p style="font-size: 70%">
+              Venislav Varbanov
+            </p>
+          </li>
+        </ul>
+        </p>
+
+        <p>
+          The final ranking of the finalists will be revealed at the ODS conference, which takes place 1-4
+          September.
+          Detailed competition results, information about problem instances, and all best known solutions will also be
+          published on this web page shortly after the conference.
+          The ranking of solutions for the rest of the teams are as follows:
+        </p>
+
+        <table style="font-size: 90%; width:150%;">
+          <thead>
+            <tr>
+              <th style="width: 18em;">team</th>
+              <th style="font-size: 70%;">line1 critical</th>
+              <th style="font-size: 70%;">line1 full</th>
+              <th style="font-size: 70%;">line2 close</th>
+              <th style="font-size: 70%;">line2 headway</th>
+              <th style="font-size: 70%;">line3</th>
+              <th style="font-size: 70%;">line4 small</th>
+              <th style="font-size: 70%;">line4 large</th>
+              <th style="font-size: 70%;">line5</th>
+              <th style="font-size: 70%;">line6</th>
+              <th style="font-size: 70%;">line7 small</th>
+              <th style="font-size: 70%;">line7 large</th>
+              <th style="font-size: 70%;">line8 small</th>
+              <th style="font-size: 70%;">line8 large</th>
+              <th style="">SUM</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <strong>Finalist #1</strong>
+              </td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>894</td>
+            </tr>
+            <tr>
+              <td><strong>Finalist #2</strong></td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>880</td>
+            </tr>
+            <tr>
+              <td><strong>Finalist #3</strong></td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>♦</td>
+              <td>♠</td>
+              <td>♣</td>
+              <td>♥</td>
+              <td>878</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Team L</strong>
+                <p style="font-size: 70%">
+                  László Kálmán Trautsch
+                </p>
+              </td>
+              <td>51</td>
+              <td>65</td>
+              <td>50</td>
+              <td>76</td>
+              <td>23</td>
+              <td>154</td>
+              <td>55</td>
+              <td>51</td>
+              <td>56</td>
+              <td>14</td>
+              <td>5</td>
+              <td>30</td>
+              <td></td>
+              <td>630</td>
+            </tr>
+            <tr>
+              <td> <strong>The TRAINees</strong>
+                <p style="font-size: 70%">
+                  Lina Breuer, Elias Kaiser
+                </p>
+              </td>
+              <td>23</td>
+              <td>3</td>
+              <td>40</td>
+              <td>68</td>
+              <td>49</td>
+              <td>64</td>
+              <td>124</td>
+              <td>4</td>
+              <td>6</td>
+              <td>10</td>
+              <td>14</td>
+              <td>26</td>
+              <td>34</td>
+              <td>465</td>
+            </tr>
+            <tr>
+              <td><strong>TCS Research Railways team</strong>
+                <p style="font-size: 70%">
+                  Aakash Swami, Gajendra Malviya
+                </p>
+              </td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>25</td>
+              <td>38</td>
+              <td>96</td>
+              <td>2</td>
+              <td>1</td>
+              <td>30</td>
+              <td>35</td>
+              <td>34</td>
+              <td>34</td>
+              <td>296</td>
+            </tr>
+            <tr>
+              <td><strong>WUB (Wien, Udine, Bologna)</strong>
+                <p style="font-size: 70%">
+                  Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales
+                  Araneda, Valentina Cacchiani
+                </p>
+              </td>
+              <td>51</td>
+              <td>34</td>
+              <td>4</td>
+              <td>10</td>
+              <td>12</td>
+              <td>25</td>
+              <td>33</td>
+              <td>16</td>
+              <td>11</td>
+              <td>20</td>
+              <td>24</td>
+              <td>14</td>
+              <td>15</td>
+              <td>269</td>
+            </tr>
+            <tr>
+              <td><strong>STR</strong>
+                <p style="font-size: 70%">
+                  BiSheng He, Jie Cao, Xinyi Guo, Yonglong Huang, Qun Zhuo, Xinyu Li
+                </p>
+              </td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td>5</td>
+              <td>14</td>
+              <td>33</td>
+              <td>60</td>
+              <td>17</td>
+              <td>16</td>
+              <td>6</td>
+              <td>7</td>
+              <td>11</td>
+              <td>22</td>
+              <td>192</td>
+            </tr>
+            <tr>
+              <td><strong>Brannon King</strong>
+                <p style="font-size: 70%">
+                  Brannon King
+                </p>
+              </td>
+              <td>19</td>
+              <td>19</td>
+              <td>14</td>
+              <td>31</td>
+              <td>23</td>
+              <td></td>
+              <td></td>
+              <td>19</td>
+              <td>26</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>151</td>
+            </tr>
+            <tr>
+              <td><strong>AWSOME</strong>
+                <p style="font-size: 70%">
+                  Ivo Stammis
+                </p>
+              </td>
+              <td>6</td>
+              <td>1</td>
+              <td>20</td>
+              <td>17</td>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td><strong>Delayed Train</strong>
+                <p style="font-size: 70%">
+                  Péter Dobrovoczki, Péter Györgyi, Markó Horváth, Tamás Kis
+                </p>
+              </td>
+              </td>
+              <td></td>
+              <td></td>
+              <td>4</td>
+              <td>3</td>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td><strong>The A-Team</strong>
+                <p style="font-size: 70%">
+                  Andres Espinoza, Alaina Gordon, Aleksandr Kazachkov, Yuyang Sun
+                </p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td><strong>Railmen</strong>
+                <p style="font-size: 70%">
+                  Chongshuang Chen, Feng Xue, Hua Meng, Xinyue Qin
+                </p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><strong>RailwayRam</strong>
+                <p style="font-size: 70%">
+                  Hariharan Subramanian, Sachin Jayaswal
+                </p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td><strong>MILP</strong>
+                <p style="font-size: 70%">
+                  Giovanni Ciaramella
+                </p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+
+        <h3>Phase 1 results</h3>
+
+        <p>
+          Eight teams submitted solutions within the Phase 1 deadline.
+          The organizers are very grateful for the high quality of these submissions.
+          Please note that these scores were computed completely independently of the Phase 2 scores.
+
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>team</th>
+              <th style="font-size: 70%;">line1_critical</th>
+              <th style="font-size: 70%;">line1_full</th>
+              <th style="font-size: 70%;">line2_close</th>
+              <th style="font-size: 70%;">line2_headway</th>
+              <th style="font-size: 70%;">line3</th>
+              <th>SUM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>openbus</strong>
+                <p style="font-size: 70%">
+                  Florian Fuchs, Thomas Dubach, Jan Lordieck, Bernardo Martin-Iradi
+                </p>
+              </td>
+              <td>76</td>
+              <td>95</td>
+              <td>80</td>
+              <td>77</td>
+              <td>42</td>
+              <td>370</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>CSLS</strong>
+                <p style="font-size: 70%">
+                  Carolin Scholl, Luka Stärk
+                </p>
+              </td>
+              <td>76</td>
+              <td>76</td>
+              <td>62</td>
+              <td>61</td>
+              <td>42</td>
+              <td>317</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>The TRAINees</strong>
+                <p style="font-size: 70%">
+                  Lina Breuer, Sebastian Brunke, Elias Kaiser, Felix Michel
+                </p>
+              </td>
+              <td>43</td>
+              <td>31</td>
+              <td>36</td>
+              <td>64</td>
+              <td>14</td>
+              <td>188</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>WUB (Wien, Udine, Bologna)</strong>
+                <p style="font-size: 70%">
+                  Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales
+                  Araneda, Valentina Cacchiani
+                </p>
+              </td>
+              <td>76</td>
+              <td>10</td>
+              <td>45</td>
+              <td>4</td>
+              <td>4</td>
+              <td>139</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Delayed Train</strong>
+                <p style="font-size: 70%">
+                  Péter Dobrovoczki, Péter Györgyi, Markó Horváth, Tamás Kis
+                </p>
+              </td>
+              <td>8</td>
+              <td>50</td>
+              <td>20</td>
+              <td>30</td>
+              <td>18</td>
+              <td>126</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>TCS Research Railways team</strong>
+                <p style="font-size: 70%">
+                  Aakash Swami, Gajendra Malviya
+                </p>
+              </td>
+              <td>20</td>
+              <td>23</td>
+              <td>10</td>
+              <td>14</td>
+              <td>26</td>
+              <td>93</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>RailwayRam</strong>
+                <p style="font-size: 70%">
+                  Hariharan Subramanian, Sachin Jayaswal
+                </p>
+              </td>
+              <td>5</td>
+              <td></td>
+              <td>9</td>
+              <td>15</td>
+              <td>1</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>The A-Team</strong>
+                <p style="font-size: 70%">
+                  Andres Espinoza, Alaina Gordon, Aleksandr Kazachkov, Yuyang Sun
+                </p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+        <h3>Files</h3>
+        <ul>
+          <li>
+            <a href="displib_2025_competition_2025-04-23.pdf">
+              <i class='bx bx-file bx-sm' style="color:#373c44;"></i>
+              DISPLIB 2025 competition and format</a>
+            (<b>updated 2025-04-23</b>)
+            <ul style="font-size: 80%; color:gray;" ;>
+              <li>
+                <a href="displib_2025_competition_2025-02-07.pdf" style="color: gray;">
+                  (prev. version 2025-02-07)
+                </a>
+                <a href="displib_2025_competition_2024-10-08.pdf" style="color: gray;">
+                  (prev. version 2024-10-08)
+                </a>
+                <a href="displib_2025_competition_2024-10-04.pdf" style="color: gray;">
+                  (prev. version 2024-10-04)
+                </a>
+                <a href="displib_2025_competition_2024-10-02.pdf" style="color: gray;">
+                  (prev. version 2024-10-02)
+                </a> <br />
+                <a href="displib_2025_competition_2024-10-01.pdf" style="color: gray;">
+                  (prev. version 2024-10-01)
+                </a>
+                <a href="displib_2025_competition_2024-09-06.pdf" style="color: gray;">
+                  (prev. version 2024-09-06)
+                </a>
+              </li>
+            </ul>
+          </li>
+          </li>
+          <li><a href="displib_verify_v0_3.zip">
+              <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+              Solution verification program (Python)</a> (version 0.3 published 2024-10-08)
+            <ul style="font-size: 80%; color:gray;">
+              <li>
+                (<a href="displib_verify_v0_2.zip" style="color:gray;">v0.2 published 2024-09-06</a>)</li>
+            </ul>
+          </li>
+
+          <li><a href="displib_instances_testing.zip">
+              <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+              Test instances</a> (published 2024-09-06)</li>
+          <li><a href="displib_instances_phase1_v1_1.zip">
+              <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+              Phase 1 instances</a>
+            (v1.1 <strong>updated</strong> 2024-10-08)
+            <ul style="font-size: 80%; color:gray;">
+              <li>
+                (<a href="displib_instances_phase1_v1_0.zip" style="color:gray;">v1.0 published 2024-10-01</a> had
+                errors in
+                the train references in the objective components of
+                the <tt>line1_full</tt> instances)</li>
+            </ul>
+
+          </li>
+          <li><a href="displib_instances_phase2_v1_0.zip">
+              <i class='bx bxs-file-archive bx-sm' style="color:#373c44;"></i>
+              Phase 2 instances</a>
+            (v1.0 published 2025-02-03)
+          </li>
+        </ul>
+
+
+        <h3>Organization</h3>
+
+        <h4>Scientific committee</h4>
+        <p>
+          An international panel of experts of railway optimization will evaluate the submissions and select a group of
+          finalists (see the competition document for details). The panel consists of:
+        </p>
+        <ul>
+          <li>Giorgio Sartor, SINTEF Digital, Norway (Chair)</li>
+          <li>Marcella Samà, Roma Tre University, Italy</li>
+          <li>Paolo Ventura, Siemens Mobility, Italy</li>
+          <li>Steven Harrod, Technical University of Denmark, Denmark</li>
+          <li>Dennis Huisman, Erasmus University Rotterdam, Netherlands</li>
+        </ul>
+
+        <h4>Organizing committee</h4>
+
+        <p>
+          The competition is organized by Bjørnar Luteberget, Giorgio Sartor, Oddvar
+          Kloster, and Carlo Mannino, and is funded by
+          <a
+            href="https://www.sintef.no/en/digital/departments-new/department-of-mathematics-and-cybernetics/research-group-optimization/">
+            SINTEF
+          </a>. Get in touch with us by email
+          if you find any errors or want to contribute new problem instances:
+          &lt;<a href="mailto:displib2025competition@gmail.com">displib2025competition@gmail.com</a>&gt;
+
+        <p style="height:8em;"></p>
+    </div>
+  </main>
+</body>
+
+</html>
