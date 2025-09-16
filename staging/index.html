@@ -6,7 +6,9 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
   <!-- Pico.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
-
+<style>
+  table.instances td {padding:0.3em}
+</style>
 </head>
 
 <body>
@@ -76,40 +78,263 @@
               DISPLIB - all best known solutions</a> (updated 2025-09-17)</li>
         </ul>
 
-        <span style="color:red; font-size:200%;">WORK IN PROGRESS </span>
 
-        <table style="font-size: 90%;">
+        <table style="font-size: 80%;" class="instances">
           <thead>
             <tr>
-              <th>filename</th>
-              <th># trains</th>
-              <th># operations</th>
-              <th># resources</th>
-              <th>best known solution</th>
+              <th style="width: 30%;">filename</th>
+              <th style="width: 10%;"># trains</th>
+              <th style="width: 10%;"># operations</th>
+              <th style="width: 10%;"># resources</th>
+              <th style="width: 25%;">best known solution</th>
             </tr>
           </thead>
-          <tr>
+                        <td colspan="5" style="font-size: 75%;">
+
+    <strong><tt>smi_headway</tt></strong>:
+    instances from Siemens Mobility Italy describing trains from a freight-dominated
+    railway extracted from a real-time information system for train dispatching. In each instance,
+    a small set of trains were extracted from a larger set of trains because they represent particularly challenging interactions. Includes non-zero release times, representing headway times computed
+    from the train length and average speed.
+          </td>
+
+<tr><td><strong><a href="problems/smi_headway_0.json">smi_headway_0</a></strong></td>
+            <td>6</td><td>443</td><td>125</td>
+            <td><a href="solutions/smi_headway_0_openbus.json">1483</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_1.json">smi_headway_1</a></strong></td>
+            <td>6</td><td>1954</td><td>481</td>
+            <td><a href="solutions/smi_headway_1_openbus.json">5040</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_2.json">smi_headway_2</a></strong></td>
+            <td>5</td><td>1854</td><td>472</td>
+            <td><a href="solutions/smi_headway_2_trainees.json">2888</a>
+              (<abbr title="Lina Breuer, Elias Kaiser">trainees</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_3.json">smi_headway_3</a></strong></td>
+            <td>13</td><td>1437</td><td>284</td>
+            <td><a href="solutions/smi_headway_3_openbus.json">3552</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_4.json">smi_headway_4</a></strong></td>
+            <td>5</td><td>113</td><td>87</td>
+            <td><a href="solutions/smi_headway_4_delayed-train.json">24797</a>
+              (<abbr title="Péter Dobrovoczki, Péter Györgyi, Markó Horváth, Tamás Kis">delayed-train</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_5.json">smi_headway_5</a></strong></td>
+            <td>9</td><td>1718</td><td>312</td>
+            <td><a href="solutions/smi_headway_5_openbus.json">869</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_6.json">smi_headway_6</a></strong></td>
+            <td>7</td><td>948</td><td>223</td>
+            <td><a href="solutions/smi_headway_6_openbus.json">22236</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_7.json">smi_headway_7</a></strong></td>
+            <td>6</td><td>1416</td><td>466</td>
+            <td><a href="solutions/smi_headway_7_openbus.json">1150</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_8.json">smi_headway_8</a></strong></td>
+            <td>9</td><td>1975</td><td>790</td>
+            <td><a href="solutions/smi_headway_8_openbus.json">5159</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_9.json">smi_headway_9</a></strong></td>
+            <td>6</td><td>1756</td><td>284</td>
+            <td><a href="solutions/smi_headway_9_openbus.json">16006</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_10.json">smi_headway_10</a></strong></td>
+            <td>8</td><td>1099</td><td>337</td>
+            <td><a href="solutions/smi_headway_10_openbus.json">9007</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_headway_11.json">smi_headway_11</a></strong></td>
+            <td>8</td><td>2245</td><td>454</td>
+            <td><a href="solutions/smi_headway_11_openbus.json">5579</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+
             <td colspan="5" style="font-size: 75%;">
-              <strong><tt>smi_headway</tt></strong>:
-              instances from Siemens Mobility Italy describing trains from a freight-dominated
-              railway extracted from a real-time information system for train dispatching. In each instance,
-              a small set of trains were extracted from a larger set of trains because they represent particularly challenging interactions. Includes non-zero release times, representing headway times computed
-              from the train length and average speed.
-            </td>
+
+    <strong><tt>smi_close</tt></strong>:
+    as <tt>smi_headway</tt>, but without headway requirement between trains.
+          </td>
+
+<tr><td><strong><a href="problems/smi_close_0.json">smi_close_0</a></strong></td>
+            <td>6</td><td>443</td><td>127</td>
+            <td><a href="solutions/smi_close_0_delayed-train.json">679</a>
+              (<abbr title="Péter Dobrovoczki, Péter Györgyi, Markó Horváth, Tamás Kis">delayed-train</abbr>)</td>
           </tr>
-          <tr><td><strong>smi_headway_0</strong></td>
-            <td>123</td>
-            <td>456</td>
-            <td>789</td>
-            <td>5513 <br/>
-              <span style="font-size: 75%;">Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi</span></td>
+<tr><td><strong><a href="problems/smi_close_1.json">smi_close_1</a></strong></td>
+            <td>6</td><td>1954</td><td>480</td>
+            <td><a href="solutions/smi_close_1_openbus.json">4316</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
           </tr>
-          <tr>
+<tr><td><strong><a href="problems/smi_close_2.json">smi_close_2</a></strong></td>
+            <td>5</td><td>1854</td><td>473</td>
+            <td><a href="solutions/smi_close_2_openbus.json">1331</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_close_3.json">smi_close_3</a></strong></td>
+            <td>13</td><td>1437</td><td>283</td>
+            <td><a href="solutions/smi_close_3_delayed-train.json">1860</a>
+              (<abbr title="Péter Dobrovoczki, Péter Györgyi, Markó Horváth, Tamás Kis">delayed-train</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_close_4.json">smi_close_4</a></strong></td>
+            <td>5</td><td>113</td><td>87</td>
+            <td><a href="solutions/smi_close_4_delayed-train.json">24225</a>
+              (<abbr title="Péter Dobrovoczki, Péter Györgyi, Markó Horváth, Tamás Kis">delayed-train</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_close_5.json">smi_close_5</a></strong></td>
+            <td>9</td><td>1718</td><td>311</td>
+            <td><a href="solutions/smi_close_5_openbus.json">314</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_close_6.json">smi_close_6</a></strong></td>
+            <td>7</td><td>948</td><td>222</td>
+            <td><a href="solutions/smi_close_6_openbus.json">21034</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_close_7.json">smi_close_7</a></strong></td>
+            <td>6</td><td>1416</td><td>464</td>
+            <td><a href="solutions/smi_close_7_openbus.json">582</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/smi_close_8.json">smi_close_8</a></strong></td>
+            <td>9</td><td>1975</td><td>787</td>
+            <td><a href="solutions/smi_close_8_openbus.json">3413</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+
             <td colspan="5" style="font-size: 75%;">
-              <strong><tt>smi_close</tt></strong>:
-              as <tt>smi_headway</tt>, but without headway requirement between trains.
-            </td>
+
+<strong><tt>nor</tt></strong>:
+Instances received from SINTEF describing parts of the Norwegian national railway
+network. Instances were generated from a daily timetable extracted from a real-time information
+ system for train dispatching. The timetable was modified by picking a random time
+during the day and adding delays to a random set of trains at the selected time. Instances
+were filtered so that only the more difficult instances are included. All the railway lines
+consists of a combination of double-track and single-track sections.
+<tt>nor1</tt> describes a railway line in Norway called Jærbanen. The line is 120 km
+long with 28 stations and contains all trains for a full day.
+
+          </td>
+
+<tr><td><strong><a href="problems/nor1_critical_0.json">nor1_critical_0</a></strong></td>
+            <td>12</td><td>559</td><td>82</td>
+            <td><a href="solutions/nor1_critical_0_wub.json">4133</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
           </tr>
+<tr><td><strong><a href="problems/nor1_critical_1.json">nor1_critical_1</a></strong></td>
+            <td>8</td><td>420</td><td>82</td>
+            <td><a href="solutions/nor1_critical_1_wub.json">2416</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_2.json">nor1_critical_2</a></strong></td>
+            <td>9</td><td>457</td><td>92</td>
+            <td><a href="solutions/nor1_critical_2_wub.json">3775</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_3.json">nor1_critical_3</a></strong></td>
+            <td>16</td><td>796</td><td>95</td>
+            <td><a href="solutions/nor1_critical_3_wub.json">8016</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_4.json">nor1_critical_4</a></strong></td>
+            <td>4</td><td>148</td><td>82</td>
+            <td><a href="solutions/nor1_critical_4_wub.json">1506</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_5.json">nor1_critical_5</a></strong></td>
+            <td>6</td><td>288</td><td>95</td>
+            <td><a href="solutions/nor1_critical_5_wub.json">2677</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_6.json">nor1_critical_6</a></strong></td>
+            <td>12</td><td>549</td><td>95</td>
+            <td><a href="solutions/nor1_critical_6_wub.json">4491</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_7.json">nor1_critical_7</a></strong></td>
+            <td>10</td><td>455</td><td>95</td>
+            <td><a href="solutions/nor1_critical_7_wub.json">4137</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_8.json">nor1_critical_8</a></strong></td>
+            <td>10</td><td>471</td><td>95</td>
+            <td><a href="solutions/nor1_critical_8_wub.json">3836</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_critical_9.json">nor1_critical_9</a></strong></td>
+            <td>12</td><td>494</td><td>82</td>
+            <td><a href="solutions/nor1_critical_9_wub.json">5488</a>
+              (<abbr title="Vera Hemmelmayr, Hai Yen Luu, Roberto Maria Rosati, Sara Ceschia, Andrea Schaerf, Alex Fabián Barrales Araneda, Valentina Cacchiani">wub</abbr>)</td>
+          </tr>
+
+            <td colspan="5" style="font-size: 75%;">
+
+          </td>
+
+<tr><td><strong><a href="problems/nor1_full_0.json">nor1_full_0</a></strong></td>
+            <td>119</td><td>6430</td><td>95</td>
+            <td><a href="solutions/nor1_full_0_openbus.json">3299</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_1.json">nor1_full_1</a></strong></td>
+            <td>148</td><td>7864</td><td>95</td>
+            <td><a href="solutions/nor1_full_1_openbus.json">2486</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_2.json">nor1_full_2</a></strong></td>
+            <td>40</td><td>2194</td><td>95</td>
+            <td><a href="solutions/nor1_full_2_openbus.json">6046</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_3.json">nor1_full_3</a></strong></td>
+            <td>56</td><td>3152</td><td>95</td>
+            <td><a href="solutions/nor1_full_3_openbus.json">2658</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_4.json">nor1_full_4</a></strong></td>
+            <td>89</td><td>4927</td><td>95</td>
+            <td><a href="solutions/nor1_full_4_openbus.json">5358</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_5.json">nor1_full_5</a></strong></td>
+            <td>129</td><td>6863</td><td>95</td>
+            <td><a href="solutions/nor1_full_5_openbus.json">3732</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_6.json">nor1_full_6</a></strong></td>
+            <td>147</td><td>7730</td><td>95</td>
+            <td><a href="solutions/nor1_full_6_openbus.json">5262</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_7.json">nor1_full_7</a></strong></td>
+            <td>146</td><td>7693</td><td>95</td>
+            <td><a href="solutions/nor1_full_7_openbus.json">1012</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_8.json">nor1_full_8</a></strong></td>
+            <td>155</td><td>8217</td><td>95</td>
+            <td><a href="solutions/nor1_full_8_openbus.json">5370</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+<tr><td><strong><a href="problems/nor1_full_9.json">nor1_full_9</a></strong></td>
+            <td>151</td><td>7968</td><td>95</td>
+            <td><a href="solutions/nor1_full_9_openbus.json">6076</a>
+              (<abbr title="Florian Fuchs, Thomas Dubach, Jan Lordieck, Francesco Corman, Bernardo Martin-Iradi">openbus</abbr>)</td>
+          </tr>
+
+
+
+
+          
         </table>
 
 
